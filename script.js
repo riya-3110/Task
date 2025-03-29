@@ -97,23 +97,3 @@ function getVaccinationReportThree(list) {
 }
 
 getVaccinationReportThree(list);
-
-document.getElementById("idOne").innerText = "Hello world !";
-document.getElementById("btn").addEventListener("click", function () {
-  alert("Button is clicked!");
-});
-document.getElementsByClassName("green").style.backgroundColor = "green";
-
-let myPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    let success = true;
-    if (success) {
-      resolve("promise fulfilled");
-    } else {
-      reject("promise rejected");
-    }
-  }, 3000);
-});
-myPromise
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error));
